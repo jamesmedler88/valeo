@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valeo Landing Page</title>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    body { 
+      font-family: 'Poppins', sans-serif; 
+      margin:0; 
+      background:#000; 
+      color:#e5e7eb; 
+      display:flex; 
+      flex-direction:column; 
+      align-items:center; 
+      text-align:center; 
+      min-height:100vh; 
+      justify-content:center;
+    }
+    .container { max-width:600px; padding:40px; }
+    img.logo { 
+      max-width:150px; 
+      width: 30%; 
+      height:auto; 
+      margin-bottom:14px; 
+    }
+    h1 { font-size:2rem; margin-bottom:16px; }
+    p { font-size:1rem; margin-bottom:24px; line-height:1.6; }
+    form { display:flex; flex-direction:column; align-items:center; }
+    input[type=text], input[type=email] { 
+      padding:14px; 
+      margin:6px 0; 
+      border-radius:6px; 
+      border:none; 
+      width:100%; 
+      max-width:400px;
+      box-sizing:border-box;
+    }
+    input:focus { outline:2px solid #22d3ee; outline-offset:2px; }
+    button { 
+      padding:12px 24px; 
+      border:none; 
+      border-radius:6px; 
+      background:#47f5b6; 
+      color:#0b1020; 
+      font-weight:bold; 
+      cursor:pointer; 
+      margin-top:12px; 
+    }
+    button:hover { background:#17e9e5; }
+    footer { 
+      margin-top:28px;  /* reduced gap from 40px */
+      font-size:0.9rem; 
+      color:#FFFFFF; 
+    }
+    .socials { margin:16px 0; }
+    .socials a { 
+      margin:0 14px; 
+      color:#22d3ee; 
+      font-size:2rem; /* bigger icons */
+      text-decoration:none; 
+    }
+    .socials a:hover { color:#47f5b6; }
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      border: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="logo.jpeg" alt="Valeo Logo" class="logo">
+    <h1>Preview your potential.</h1>
+    <p>
+      Valeo helps you stay motivated on your health journey.
+      We’re building a smarter way to track progress, stay accountable, and reach your goals.
+    </p>
+    
+    <form action="mailto:info@valeoapp.com" method="post" enctype="text/plain">
+      <label for="name" class="sr-only">Your name</label>
+      <input type="text" id="name" name="name" placeholder="Your name" required>
+      
+      <label for="email" class="sr-only">Email address</label>
+      <input type="email" id="email" name="email" placeholder="Email address" required>
+      
+      <button type="submit">Join the Waitlist</button>
+    </form>
+  </div>
+
+  <footer>
+    <p>Follow Valeo’s journey and get the latest updates::</p>
+    <div class="socials">
+      <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+      <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="#" aria-label="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
+      <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </footer>
+</body>
+</html>
